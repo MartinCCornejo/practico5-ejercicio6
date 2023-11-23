@@ -2,9 +2,35 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: #ededed;
 }
 
 main{
     flex-grow: 1;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.temporizador{
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 20px;
+    background: #ccc;
+    box-shadow: 4px 4px 10px rgba(100,100,100,0.5);
+
+}
+
+.temporizador button{
+    border-radius: 45%;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+    transition: .3s;
+}
+button:focus {
+    outline: none;
+}
