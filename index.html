@@ -26,7 +26,19 @@
     </header>
 
     <main>
-      
+      <section class="container my-5">
+        <form id="form-container">
+          <label for="segundos" class="form-label">Escriba el número en segundos</label>
+          <input type="number" class="form-control mb-3" id="segundos" placeholder="Ej: 60" required>
+          <button class="btn btn-success" type="submit">Aplicar</button>
+        </form>
+        <div class="temporizador">
+          <h3 class="display-2 bg-black text-success p-3 mb-5">0:00</h3>
+          <button id="pausa" class="btn btn-outline-success fs-1"><i class="bi bi-pause"></i></button>
+          <button id="iniciar" class="btn btn-outline-success mx-3 fs-1"><i class="bi bi-play"></i></button>
+          <button id="resetear" class="btn btn-outline-success fs-1"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-dark py-3 px-1 text-light text-center">
